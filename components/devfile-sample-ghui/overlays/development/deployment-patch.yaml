@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ghui
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0063-tenant/tkrw-pr712-0075-0063-app/devfile-sample-ghui@sha256:8d1a8992e89c6ddff5a132a6f0430bf9faf2d53ed5ec0a6ce9d345aecaa05c3d
+        name: my-nodejs
+        resources: {}
+status: {}
